@@ -1,0 +1,113 @@
+body{
+    background-image: linear-gradient(
+        to right,
+        pink,
+        rgb(148, 241, 148),
+        skyblue
+    );
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.box{
+    background-color: rgb(2, 75, 2);
+    width: 200px;
+    height: 200px;
+    transition: 2s;
+   
+}
+.box1:hover{
+    transition: 2s;
+    border-radius: 50%;
+    transition-timing-function: ease-out;
+    
+    background-image: radial-gradient(
+        blue, 
+        green,
+        rgb(78, 204, 78) 
+    );
+}
+
+.box2:hover{
+    transition: 3s;
+    transition-timing-function: ease;
+    transform: rotateZ(450deg);
+    border-bottom-left-radius: 40%;
+    border-top-right-radius: 40%;
+}
+.box3:hover{
+    transition: 2s;
+    border-radius: 50%;
+    transform: skewX(25deg);
+}
+.box4:hover{
+    transition: 3s;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.container2{
+    margin-top: 40px;
+}
+div p{
+    margin-top: 40px;
+    
+}
+div p:hover{
+    transition: 2s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: x-large;
+
+}
+
+.overline:hover{
+  
+    text-decoration: line-through;
+}
+.image{
+   width: 250px;
+   height: 200px;
+   /* background-repeat: no-repeat;
+   background-size: cover; */
+}
+.image:hover{
+    transition: 2s;
+    width: 100vw;
+}
+
+
+/* media queries */
+
+/* for mobile */
+
+
+@media screen and (min-width:300px) and (max-width:600px)
+ {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        margin: 10px;
+    }
+    
+}
+
+/* For Tablet */
+
+@media screen and (min-width:600px) and (max-width:900px)
+ {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        margin: 10px;
+    }
+    
+}
